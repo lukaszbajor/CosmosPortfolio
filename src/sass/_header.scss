@@ -39,6 +39,58 @@
 		left: 62vw;
 		animation-delay: 15s;
 	}
+
+	&__bigDipperBox {
+		position: absolute;
+		top: 20vh;
+		right: 10vw;
+		/* border: 1px solid white; */
+		height: 200px;
+		width: 400px;
+	}
+	&__bigDipperStar {
+		position: absolute;
+		height: 7px;
+		width: 7px;
+		border-radius: 50%;
+		background-color: white;
+		/* box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 1); */
+		box-shadow: 0px 0px 7px 0px rgba(79, 180, 255, 1);
+	}
+	&__bigDipperStar:nth-of-type(1) {
+		top: 80px;
+		left: 10px;
+	}
+	&__bigDipperStar:nth-of-type(2) {
+		top: 40px;
+		left: 80px;
+	}
+	&__bigDipperStar:nth-of-type(3) {
+		top: 60px;
+		left: 150px;
+	}
+	&__bigDipperStar:nth-of-type(4) {
+		top: 70px;
+		left: 220px;
+		height: 6px;
+		width: 6px;
+		box-shadow: 0px 0px 8px 0px rgba(79, 180, 255, 1);
+	}
+	&__bigDipperStar:nth-of-type(5) {
+		top: 140px;
+		left: 260px;
+		height: 6px;
+		width: 6px;
+		box-shadow: 0px 0px 8px 0px rgba(79, 180, 255, 1);
+	}
+	&__bigDipperStar:nth-of-type(6) {
+		top: 120px;
+		left: 380px;
+	}
+	&__bigDipperStar:nth-of-type(7) {
+		top: 30px;
+		left: 370px;
+	}
 }
 #particles-js {
 	height: 100vh;
@@ -58,56 +110,4 @@
 		transform: rotate(30deg) scaleY(1) translateY(500%);
 		opacity: 0;
 	}
-}
-
-.bigDipperBox {
-	position: absolute;
-	top: 20vh;
-	right: 10vw;
-	/* border: 1px solid white; */
-	height: 200px;
-	width: 400px;
-}
-.bigDipperStar {
-	position: absolute;
-	height: 7px;
-	width: 7px;
-	border-radius: 50%;
-	background-color: white;
-	/* box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 1); */
-	box-shadow: 0px 0px 7px 0px rgba(79, 180, 255, 1);
-}
-.bigDipperStar:nth-of-type(1) {
-	top: 80px;
-	left: 10px;
-}
-.bigDipperStar:nth-of-type(2) {
-	top: 40px;
-	left: 80px;
-}
-.bigDipperStar:nth-of-type(3) {
-	top: 60px;
-	left: 150px;
-}
-.bigDipperStar:nth-of-type(4) {
-	top: 70px;
-	left: 220px;
-	height: 6px;
-	width: 6px;
-	box-shadow: 0px 0px 8px 0px rgba(79, 180, 255, 1);
-}
-.bigDipperStar:nth-of-type(5) {
-	top: 140px;
-	left: 260px;
-	height: 6px;
-	width: 6px;
-	box-shadow: 0px 0px 8px 0px rgba(79, 180, 255, 1);
-}
-.bigDipperStar:nth-of-type(6) {
-	top: 120px;
-	left: 380px;
-}
-.bigDipperStar:nth-of-type(7) {
-	top: 30px;
-	left: 370px;
 }
