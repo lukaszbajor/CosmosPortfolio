@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-	const stars = document.querySelectorAll(".star");
+	const stars = document.querySelectorAll(".header__star");
 
 	const resetAnimation = (star) => {
 		star.className = "";
 		setTimeout(function () {
-			star.className = "star";
+			star.className = "header__star";
 			// startShootingStarAnimation(star); // Dodaj to, aby natychmiast uruchomić nową animację
 		}, 0);
 	};
