@@ -1,7 +1,7 @@
 .nav {
 	position: fixed;
 	width: 100%;
-	background-color: $opacity-cosmos;
+	// background-color: $opacity-cosmos;
 	z-index: 99;
 
 	&__box {
@@ -14,7 +14,7 @@
 		align-items: center;
 	}
 	&__logo {
-		margin-left: 2em;
+		margin-left: 1em;
 		color: $pure-white;
 		font-size: 3rem;
 	}
@@ -25,7 +25,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		display: flex;
+		display: none;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
@@ -34,53 +34,96 @@
 		list-style: none;
 		z-index: 97;
 	}
+	&__menuBurger {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		height: 25px;
+		width: 25px;
+		margin: 1em;
+		transition: all 0.4s;
+		z-index: 98;
+
+		span {
+			display: block;
+			height: 2px;
+			width: 100%;
+			background-color: #fff;
+			transform: translate(0);
+			transition: all 0.4s;
+		}
+	}
 	&__item {
 		margin: 3em 0;
 		color: $pure-white;
-		letter-spacing: 0.1em;
+		letter-spacing: 0.5em;
 	}
 	&__item a {
 		color: $pure-white;
 		text-decoration: none;
-		cursor: pointer;
+		text-transform: uppercase;
+		cursor: default;
 	}
+}
+@keyframes animateMenu {
+	0% {
+		transform: translateX(-100%);
+		opacity: 0.5;
+	}
+	70% {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+.active {
+	span:nth-child(2) {
+		display: none;
+	}
+	span:nth-child(1) {
+		transform: rotate(-45deg) translateX(-10px);
+	}
+	span:nth-child(3) {
+		transform: rotate(45deg) translateX(-10px);
+	}
+}
+.showMenu {
+	display: flex;
+	animation: animateMenu 1s ease-in-out;
 }
 
 @media (min-width: 992px) {
 	.nav {
-		position: fixed;
-		width: 100%;
-		background-color: $opacity-cosmos;
-		z-index: 99;
-
-		&__box {
-			margin: 0 auto;
-			padding: 0.5em 0;
-			max-width: 1400px;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			align-items: center;
-		}
 		&__logo {
 			margin-left: 2em;
-			color: $pure-white;
-			font-size: 3rem;
+		}
+		&__box {
+			padding-top: 1em;
 		}
 
 		&__list {
 			position: unset;
-			padding: 1em;
 			list-style: none;
+			width: unset;
+			height: unset;
+			top: unset;
+			left: unset;
+			display: flex;
+			flex-direction: row;
+			background-color: unset;
+		}
+		&__menuBurger {
+			display: none;
 		}
 		&__item {
 			margin: 0 1em;
-			color: $pure-white;
 			letter-spacing: 0.1em;
 		}
 		&__item a {
 			color: $pure-white;
-			text-decoration: none;
 			cursor: pointer;
 		}
 	}
