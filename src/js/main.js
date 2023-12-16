@@ -1,6 +1,6 @@
 const burger = document.querySelector(".nav__menuBurger");
 const menu = document.querySelector(".nav__list");
-// const nav = document.querySelector(".nav");
+const nav = document.querySelector(".nav");
 // const links = document.querySelectorAll(".header__menu-link");
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -26,17 +26,17 @@ const handleBurger = () => {
 	menu.classList.toggle("showMenu");
 };
 
-// const changeBackgroundColor = () => {
-// 	if (window.scrollY >= 20) {
-// 		nav.style.backgroundColor = "#15191D";
-// 		nav.style.transition = "all .3s";
-// 	} else {
-// 		nav.style.backgroundColor = "transparent";
-// 	}
-// };
+const changeBackgroundColor = () => {
+	if (window.scrollY >= 20) {
+		nav.style.backgroundColor = "#688ae603";
+		nav.style.transition = "all .3s";
+	} else {
+		nav.style.backgroundColor = "transparent";
+	}
+};
 
 burger.addEventListener("click", handleBurger);
-// window.addEventListener("scroll", changeBackgroundColor);
+window.addEventListener("scroll", changeBackgroundColor);
 
 // links.forEach((item) => {
 // 	item.addEventListener("click", () => {
