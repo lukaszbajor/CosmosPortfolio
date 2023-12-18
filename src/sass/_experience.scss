@@ -1,0 +1,12 @@
+.experience {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $cosmos;
+	&__title {
+		color: $pure-white;
+		padding: 2em;
+		font-size: 2.8rem;
+		text-transform: uppercase;
+	}
+}
