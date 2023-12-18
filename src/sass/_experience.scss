@@ -1,5 +1,8 @@
 .experience {
+	margin-top: 4em;
+	padding-bottom: 2em;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-color: $cosmos;
@@ -8,5 +11,62 @@
 		padding: 2em;
 		font-size: 2.8rem;
 		text-transform: uppercase;
+	}
+	&__timeline {
+		position: relative;
+		width: 100%;
+		max-width: 800px;
+		margin: 4em 0;
+		// background-color: $pure-white;
+	}
+	&__timeline::before {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		display: block;
+		width: 2px;
+		height: 100%;
+		background-color: $pure-white;
+		content: "";
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		margin: 0 2em;
+		list-style: none;
+	}
+	&__item {
+		position: relative;
+		margin-bottom: 2em;
+		padding: 2em;
+		width: 50%;
+		border: 1px solid $pure-white;
+		border-radius: 8px;
+		// box-shadow: 0 0 5px 0 #4fb4ff;
+		color: $pure-white;
+	}
+	&__item::after {
+		position: absolute;
+		top: calc(50% - 10px);
+		width: 20px;
+		height: 20px;
+		background-color: $pure-white;
+		border-radius: 50%;
+		content: "";
+		box-shadow: 0 0 5px 0 #4fb4ff;
+	}
+	&__item:nth-child(even) {
+		align-self: flex-end;
+		transform: translateX(20px);
+	}
+	&__item:nth-child(even)::after {
+		left: -31px;
+	}
+	&__item:nth-child(odd) {
+		transform: translateX(-20px);
+	}
+	&__item:nth-child(odd)::after {
+		right: -31px;
 	}
 }
