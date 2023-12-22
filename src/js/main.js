@@ -28,7 +28,7 @@ const handleBurger = () => {
 
 const changeBackgroundColor = () => {
 	if (window.scrollY >= 20) {
-		nav.style.backgroundColor = "#688ae603";
+		nav.style.backgroundColor = "#231f43";
 		nav.style.transition = "all .3s";
 	} else {
 		nav.style.backgroundColor = "transparent";
