@@ -55,7 +55,8 @@
 		z-index: 0;
 	}
 	&__text {
-		padding: 1em;
+		padding: 0 1em;
+		padding-top: 3em;
 		text-align: justify;
 		color: $cosmos;
 		font-weight: 200;
@@ -74,6 +75,8 @@
 			height: 400px;
 		}
 		&__text {
+			padding-left: 4em;
+			padding-top: 0;
 			// align-self: flex-start;
 			flex-basis: 50%;
 		}

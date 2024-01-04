@@ -1,0 +1,45 @@
+.motivation {
+	margin: 0 auto;
+	max-width: 1200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2em;
+	color: $cosmos;
+	font-family: monospace;
+
+	&__text {
+		margin: 1em 0;
+		font-weight: 400;
+		font-size: 2rem;
+		text-align: center;
+		font-style: italic;
+	}
+	&__author {
+		margin: 1em 0;
+		font-weight: 200;
+		font-size: 1.8rem;
+		align-self: flex-end;
+	}
+}
+@media (min-width: 992px) {
+	.motivation {
+		&__text {
+			font-size: 2.6rem;
+		}
+		&__author {
+			font-size: 2rem;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.motivation {
+		&__text {
+			font-size: 3.2rem;
+		}
+		&__author {
+			font-size: 2.4rem;
+		}
+	}
+}
