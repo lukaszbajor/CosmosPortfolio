@@ -141,7 +141,7 @@
 			background-color: $pure-white;
 			border-radius: 50%;
 			content: "";
-			box-shadow: 0 0 5px 0 #4fb4ff;
+			box-shadow: 0 0 5px 0 $star-shadow;
 		}
 		&__item:nth-child(even) {
 			align-self: flex-end;

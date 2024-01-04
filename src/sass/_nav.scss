@@ -1,7 +1,6 @@
 .nav {
 	position: fixed;
 	width: 100%;
-	// background-color: $opacity-cosmos;
 	z-index: 99;
 
 	&__box {
@@ -61,10 +60,12 @@
 		color: $pure-white;
 		letter-spacing: 0.5em;
 	}
-	&__item a {
+	&__link {
+		// padding-bottom: 0.5em;
 		color: $pure-white;
 		text-decoration: none;
 		text-transform: uppercase;
+		// border-bottom: 1px solid $pure-white;
 		cursor: default;
 	}
 }
@@ -123,10 +124,29 @@
 		&__item {
 			margin: 0 1em;
 			letter-spacing: 0.1em;
+			// transition: 0.3s;
 		}
-		&__item a {
-			color: $pure-white;
+		&__link {
+			position: relative;
+			padding-bottom: 0.5em;
 			cursor: pointer;
+		}
+		&__link::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 2px;
+			width: 100%;
+			background-color: $pure-white;
+			transition: transform 0.3s;
+			transform: scaleX(0);
+			transform-origin: right;
+			box-shadow: 0 0 5px 0 $star-shadow;
+		}
+		&__link:hover::after {
+			transform: scaleX(1);
+			transform-origin: left;
 		}
 	}
 }
