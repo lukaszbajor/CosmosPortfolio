@@ -37,9 +37,11 @@
 		list-style: none;
 	}
 	&__item {
+		display: flex;
+		flex-direction: column;
 		position: relative;
 		margin-bottom: 2em;
-		padding: 2em;
+		padding: 1.8em;
 		width: 50%;
 		border: 1px solid $pure-white;
 		border-radius: 8px;
@@ -60,13 +62,30 @@
 		align-self: flex-end;
 		transform: translateX(20px);
 	}
+	&__item:nth-child(even) .experience__item-title {
+		align-self: flex-end;
+	}
 	&__item:nth-child(even)::after {
 		left: -31px;
 	}
 	&__item:nth-child(odd) {
 		transform: translateX(-20px);
 	}
+
 	&__item:nth-child(odd)::after {
 		right: -31px;
+	}
+	&__item-title {
+		text-transform: uppercase;
+	}
+
+	&__item-desc {
+		margin: 1em 0;
+	}
+
+	&__item-date {
+		font-size: 1.4rem;
+		font-weight: 200;
+		align-self: flex-end;
 	}
 }
