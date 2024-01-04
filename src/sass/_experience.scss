@@ -67,7 +67,7 @@
 	}
 
 	&__item-title {
-		align-items: flex-start;
+		align-self: center;
 		text-transform: uppercase;
 	}
 
@@ -79,6 +79,7 @@
 	&__item-date {
 		font-size: 1.4rem;
 		align-self: flex-end;
+		color: $date;
 	}
 }
 @media (min-width: 768px) {
@@ -132,9 +133,10 @@
 			color: $pure-white;
 		}
 		&__item::after {
-			position: absolute;
 			top: calc(50% - 10px);
+			left: unset;
 			width: 20px;
+			transform: unset;
 			height: 20px;
 			background-color: $pure-white;
 			border-radius: 50%;
@@ -148,6 +150,7 @@
 		&__item:nth-child(even) .experience__item-title {
 			align-self: flex-end;
 		}
+
 		&__item:nth-child(even)::after {
 			left: -31px;
 		}
@@ -159,7 +162,7 @@
 			right: -31px;
 		}
 		&__item-title {
-			text-transform: uppercase;
+			align-self: flex-start;
 		}
 
 		&__item-desc {
