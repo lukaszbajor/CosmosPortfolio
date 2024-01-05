@@ -2,3 +2,19 @@
 // 	margin: 0 auto;
 // 	max-width: 1200px;
 // }
+// .active {
+// 	span:nth-child(2) {
+// 		display: none;
+// 	}
+// 	span:nth-child(1) {
+// 		transform: rotate(-45deg) translateX(-10px);
+// 	}
+// 	span:nth-child(3) {
+// 		transform: rotate(45deg) translateX(-10px);
+// 	}
+// }
+// .showMenu {
+// 	transform: translate(0);
+// 	opacity: 1;
+// 	// animation: animateMenu 1s ease-in-out;
+// }
