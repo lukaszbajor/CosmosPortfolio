@@ -4,10 +4,11 @@
 	justify-content: center;
 	align-items: center;
 	&__title {
-		color: $cosmos;
+		margin-bottom: 2em;
 		padding: 2em;
 		font-size: 2.8rem;
 		text-transform: uppercase;
+		color: $cosmos;
 	}
 	&__box {
 		display: flex;
