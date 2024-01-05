@@ -14,8 +14,10 @@
 	}
 	&__logo {
 		margin-left: 1em;
-		color: $pure-white;
 		font-size: 3rem;
+		a {
+			color: $pure-white;
+		}
 	}
 
 	&__list {
