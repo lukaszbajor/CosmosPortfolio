@@ -37,10 +37,19 @@
 		width: 250px;
 		border: 3px solid $cosmos;
 		border-radius: 50%;
-		background-image: url("/dist/img/img_cv.png");
 		background-size: cover;
 		background-position: center;
 	}
+	&__item:nth-child(1) .projects__img {
+		background-image: url("/dist/img/lorempizza.png");
+	}
+	&__item:nth-child(2) .projects__img {
+		background-image: url("/dist/img/fg.png");
+		/* Dodatkowa stylizacja dla drugiego elementu .projects__img */
+	}
+	// &__img:nth-of-type(2) {
+	// 	background-image: url("/dist/img/fightgame.png");
+	// }
 	&__img::after {
 		display: block;
 		content: "";
@@ -66,8 +75,13 @@
 		background-color: $cosmos;
 		z-index: -1;
 	}
+
 	&__name {
 		margin: 0.5em 0;
 		letter-spacing: 2px;
+		color: $cosmos;
+	}
+	&__desc {
+		font-weight: 200;
 	}
 }
