@@ -51,6 +51,16 @@
 		background-position: left;
 		/* Dodatkowa stylizacja dla drugiego elementu .projects__img */
 	}
+	&__item:nth-child(4) .projects__img {
+		background-image: url("/dist/img/recipes.png");
+
+		/* Dodatkowa stylizacja dla drugiego elementu .projects__img */
+	}
+	&__item:nth-child(5) .projects__img {
+		background-image: url("/dist/img/loremphoto.png");
+
+		/* Dodatkowa stylizacja dla drugiego elementu .projects__img */
+	}
 	// &__img:nth-of-type(2) {
 	// 	background-image: url("/dist/img/fightgame.png");
 	// }
@@ -88,6 +98,7 @@
 
 	&__name {
 		margin: 0.5em 0;
+		padding: 0.5em;
 		text-align: center;
 		letter-spacing: 2px;
 		color: $cosmos;
