@@ -113,6 +113,7 @@
 	&__desc {
 		padding: 0.5em;
 		font-weight: 200;
+		text-align: justify;
 		color: $cosmos;
 	}
 	&__links {
@@ -133,7 +134,7 @@
 		border-radius: 8px;
 		background-color: $cosmos;
 		font-size: 1.2rem;
-		font-weight: 700;
+		font-weight: 400;
 		text-decoration: none;
 		color: $pure-white;
 		cursor: default;
