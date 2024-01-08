@@ -13,6 +13,7 @@
 		color: $pure-white;
 	}
 	&__box {
+		margin-bottom: 4em;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -24,6 +25,7 @@
 		justify-content: center;
 		align-items: center;
 		margin: 1em;
+		padding: 0.5em;
 		background-color: $pure-white;
 		border-radius: 8px;
 		z-index: 0;
@@ -113,8 +115,32 @@
 		font-weight: 200;
 		color: $cosmos;
 	}
-	&__btns {
+	&__links {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin: 1em;
 		padding: 1em;
+	}
+	&__link {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin: 0.5em;
+		padding: 1em 1em;
+		text-transform: uppercase;
+		border-radius: 8px;
+		background-color: $cosmos;
+		font-size: 1.2rem;
+		font-weight: 700;
+		text-decoration: none;
+		color: $pure-white;
+		cursor: default;
+		i {
+			font-size: 2rem;
+			margin-right: 0.5em;
+		}
 	}
 }
 @media (min-width: 768px) {
@@ -136,6 +162,13 @@
 		}
 		&__img {
 			margin-right: 1em;
+		}
+		&__link {
+			transition: 0.3s;
+			cursor: pointer;
+		}
+		&__link:hover {
+			background-color: $opacity-cosmos-hover;
 		}
 	}
 }
