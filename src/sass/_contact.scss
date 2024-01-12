@@ -4,6 +4,7 @@
 		position: relative;
 		display: flex;
 		justify-content: center;
+		align-items: center;
 	}
 	&__form {
 	}
@@ -31,5 +32,21 @@
 	input:focus ~ label {
 		transform: translate(20%, -105%);
 		color: $cosmos;
+	}
+	& input[type="submit"],
+	input[type="reset"] {
+		margin: 0.5em;
+		padding: 1em 1em;
+		text-transform: uppercase;
+		border-radius: 8px;
+		border: none;
+		background-color: $cosmos;
+		font-size: 1.2rem;
+		font-weight: 400;
+		font-family: Roboto;
+		text-decoration: none;
+		color: $pure-white;
+		// letter-spacing: 2px;
+		outline: none;
 	}
 }
