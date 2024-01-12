@@ -1,6 +1,6 @@
 .contact {
 	padding: 2em 0;
-	&__inputBox {
+	&__itemBox {
 		position: relative;
 		display: flex;
 		justify-content: center;
@@ -8,13 +8,18 @@
 	}
 	&__form {
 	}
-	input[type="text"] {
+	input[type="text"],
+	textarea {
 		margin: 1em 0;
 		padding: 1em;
 		width: 90%;
 		border-radius: 8px;
 		border: 2px solid $cosmos;
 		color: $cosmos;
+	}
+	textarea {
+		min-height: 300px;
+		resize: none;
 	}
 	label {
 		position: absolute;
@@ -26,10 +31,19 @@
 		transition: transform 0.3s;
 		color: $cosmos;
 	}
-	input:focus {
+	textarea ~ label {
+		top: 8%;
+		left: 10%;
+	}
+	input:focus,
+	textarea:focus {
 		outline: none;
 	}
 	input:focus ~ label {
+		transform: translate(20%, -105%);
+		color: $cosmos;
+	}
+	textarea:focus ~ label {
 		transform: translate(20%, -105%);
 		color: $cosmos;
 	}
