@@ -1,6 +1,5 @@
 .experience {
-	margin-top: 4em;
-	padding-bottom: 2em;
+	padding: 2em 0 2em 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -85,8 +84,6 @@
 }
 @media (min-width: 768px) {
 	.experience {
-		margin-top: 4em;
-		padding-bottom: 2em;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;

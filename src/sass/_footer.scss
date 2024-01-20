@@ -1,0 +1,19 @@
+.footer {
+	padding: 3em;
+	background-color: $cosmos;
+
+	&__author {
+		text-transform: uppercase;
+		text-align: center;
+		color: $pure-white;
+		letter-spacing: 4px;
+		font-size: 2rem;
+	}
+}
+@media (min-width: 992px) {
+	.footer {
+		&__author {
+			font-size: 2.5rem;
+		}
+	}
+}

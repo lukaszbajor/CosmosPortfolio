@@ -1,7 +1,7 @@
 .contact {
 	display: flex;
 	flex-direction: column;
-	padding: 2em 0;
+	padding: 2em 0 6em 0;
 
 	&__title {
 		margin-bottom: 2em;
@@ -62,7 +62,7 @@
 		color: $cosmos;
 	}
 
-	& input[type="submit"],
+	input[type="submit"],
 	input[type="reset"] {
 		margin: 0.5em;
 		padding: 1em 1em;
@@ -93,6 +93,7 @@
 		a {
 			text-decoration: none;
 			color: $cosmos;
+			cursor: default;
 		}
 	}
 }
@@ -116,16 +117,32 @@
 		&__form {
 			flex-basis: 45%;
 		}
-		& input[type="submit"],
+		input[type="submit"],
 		input[type="reset"] {
+			transition: 0.3s;
 			cursor: pointer;
 		}
+
+		input[type="submit"]:hover,
+		input[type="reset"]:hover {
+			background-color: $opacity-cosmos-hover;
+		}
+
 		&__items {
 			margin-top: unset;
 			flex-basis: 45%;
 			justify-content: center;
 
 			// align-items: flex-start;
+		}
+		&__item {
+			a {
+				transition: 0.3s;
+				cursor: pointer;
+			}
+			a:hover {
+				color: $date;
+			}
 		}
 	}
 }
