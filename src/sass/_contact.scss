@@ -1,14 +1,31 @@
 .contact {
+	display: flex;
+	flex-direction: column;
 	padding: 2em 0;
+
+	&__title {
+		margin-bottom: 2em;
+		padding: 2em;
+		font-size: 2.8rem;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 2px;
+		color: $cosmos;
+	}
+	&__box {
+		display: flex;
+		flex-direction: column;
+		max-width: 1200px;
+	}
 	&__itemBox {
 		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
-	&__form {
-	}
+
 	input[type="text"],
+	input[type="email"],
 	textarea {
 		margin: 1em 0;
 		padding: 1em;
@@ -24,7 +41,7 @@
 	label {
 		position: absolute;
 		top: 33%;
-		left: 10%;
+		left: 6%;
 		padding: 0 0.5em;
 		background-color: $pure-white;
 		font-size: 1.8rem;
@@ -33,20 +50,18 @@
 	}
 	textarea ~ label {
 		top: 8%;
-		left: 10%;
+		left: 6%;
 	}
 	input:focus,
 	textarea:focus {
 		outline: none;
 	}
-	input:focus ~ label {
-		transform: translate(20%, -105%);
-		color: $cosmos;
-	}
+	input:focus ~ label,
 	textarea:focus ~ label {
 		transform: translate(20%, -105%);
 		color: $cosmos;
 	}
+
 	& input[type="submit"],
 	input[type="reset"] {
 		margin: 0.5em;
@@ -60,7 +75,57 @@
 		font-family: Roboto;
 		text-decoration: none;
 		color: $pure-white;
-		// letter-spacing: 2px;
+		letter-spacing: 2px;
 		outline: none;
+	}
+	&__items {
+		margin-top: 2em;
+		padding: 1em;
+		display: flex;
+		flex-direction: column;
+	}
+	&__item {
+		margin: 0.5em;
+		color: $cosmos;
+		font-size: 2.2rem;
+		text-align: left;
+		letter-spacing: 2px;
+		a {
+			text-decoration: none;
+			color: $cosmos;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.contact {
+		&__items {
+			align-items: center;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.contact {
+		&__box {
+			width: 100%;
+			flex-direction: row;
+			justify-content: space-between;
+			align-self: center;
+		}
+		&__form {
+			flex-basis: 45%;
+		}
+		& input[type="submit"],
+		input[type="reset"] {
+			cursor: pointer;
+		}
+		&__items {
+			margin-top: unset;
+			flex-basis: 45%;
+			justify-content: center;
+
+			// align-items: flex-start;
+		}
 	}
 }
