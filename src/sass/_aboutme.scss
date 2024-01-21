@@ -41,7 +41,9 @@
 		width: 100%;
 		height: 100%;
 		border-radius: 50%;
-		background-color: $cosmos;
+		// background-color: $cosmos;
+		background-image: url("../../src/img/cosmos.png");
+		background-size: contain;
 		z-index: -1;
 	}
 	&__img::after {
