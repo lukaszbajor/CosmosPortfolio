@@ -1,7 +1,7 @@
 .contact {
 	display: flex;
 	flex-direction: column;
-	padding: 2em 0 6em 0;
+	padding: 2em 0 3em 0;
 
 	&__title {
 		margin-bottom: 2em;
@@ -88,7 +88,7 @@
 	&__item {
 		margin: 0.5em;
 		color: $cosmos;
-		font-size: 2.2rem;
+		font-size: 2rem;
 		text-align: left;
 		letter-spacing: 2px;
 		a {
@@ -113,13 +113,13 @@
 	}
 }
 
-// @media (min-width: 768px) {
-// 	.contact {
-// 		&__items {
-// 			align-items: center;
-// 		}
-// 	}
-// }
+@media (min-width: 576px) {
+	.contact {
+		&__item {
+			font-size: 2.2rem;
+		}
+	}
+}
 
 @media (min-width: 992px) {
 	.contact {
@@ -157,6 +157,13 @@
 			a:hover {
 				color: $date;
 			}
+		}
+	}
+}
+@media (max-width: 375px) {
+	.contact {
+		&__item {
+			font-size: 1.8rem;
 		}
 	}
 }
