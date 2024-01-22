@@ -14,8 +14,8 @@
 		height: 2px;
 		width: 2px;
 		border-radius: 50%;
-		border-bottom: 100px solid white;
-		background-color: #fff;
+		border-bottom: 100px solid $pure-white;
+		box-shadow: 0px 0px 5px 0px $starlight;
 		transform-origin: top right;
 		animation: shootingStar 0.5s;
 		opacity: 0;
@@ -57,7 +57,7 @@
 		border-radius: 50%;
 		background-color: white;
 		/* box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 1); */
-		box-shadow: 0px 0px 7px 0px rgba(79, 180, 255, 1);
+		box-shadow: 0px 0px 7px 0px $starlight;
 	}
 	&__bigDipperStar:nth-of-type(1) {
 		top: 80px;
