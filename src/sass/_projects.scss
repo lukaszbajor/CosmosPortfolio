@@ -71,6 +71,11 @@
 
 		/* Dodatkowa stylizacja dla drugiego elementu .projects__img */
 	}
+	&__item:nth-child(7) .projects__img {
+		background-image: url("/dist/img/auril.png");
+
+		/* Dodatkowa stylizacja dla drugiego elementu .projects__img */
+	}
 	// &__img:nth-of-type(2) {
 	// 	background-image: url("/dist/img/fightgame.png");
 	// }
