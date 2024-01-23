@@ -65,6 +65,27 @@
 		color: $cosmos;
 		font-weight: 200;
 		font-size: 2rem;
+		a {
+			position: relative;
+			display: inline-block;
+			padding: 0.2em;
+			color: $pure-white;
+			text-decoration: none;
+
+			// border-bottom: 3px solid $date;
+		}
+		a::before {
+			display: block;
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background-color: $date;
+			border-radius: 4px;
+			height: 100%;
+			width: 100%;
+			z-index: -1;
+		}
 	}
 	&__stackBox {
 		display: flex;
@@ -150,6 +171,23 @@
 			padding-top: 0;
 			// align-self: flex-start;
 			flex-basis: 50%;
+			a {
+				transition: 0.3s;
+				color: $cosmos;
+				cursor: pointer;
+				// border-bottom: 3px solid $date;
+			}
+			a::before {
+				height: 3px;
+				transition: 0.3s;
+				z-index: -1;
+			}
+			a:hover {
+				color: $pure-white;
+			}
+			a:hover::before {
+				height: 100%;
+			}
 		}
 		&__stackBox {
 			max-width: 800px;
