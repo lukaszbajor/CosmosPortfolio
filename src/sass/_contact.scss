@@ -47,6 +47,7 @@
 		font-size: 1.8rem;
 		transition: transform 0.3s;
 		color: $cosmos;
+		pointer-events: none;
 	}
 	textarea ~ label {
 		top: 8%;
@@ -96,6 +97,19 @@
 			color: $cosmos;
 			cursor: default;
 		}
+	}
+	&__cv {
+		margin-top: 1em;
+		padding: 0.5em 1em;
+		border: 2px solid $cosmos;
+		border-radius: 8px;
+		background-color: transparent;
+		font-size: 1.6rem;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-family: Roboto;
+		text-decoration: none;
+		color: $cosmos;
 	}
 	.smallDipperBox--dark {
 		margin-top: 4em;
@@ -158,6 +172,14 @@
 			a:hover {
 				color: $date;
 			}
+		}
+		&__cv {
+			transition: 0.3s;
+			cursor: pointer;
+		}
+		&__cv:hover {
+			background-color: $cosmos;
+			color: $pure-white;
 		}
 	}
 }
