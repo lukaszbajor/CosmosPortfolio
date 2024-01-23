@@ -76,6 +76,47 @@
 
 		/* Dodatkowa stylizacja dla drugiego elementu .projects__img */
 	}
+	&__item:nth-child(8) .projects__img {
+		background-image: url("/dist/img/pracainz.png");
+
+		/* Dodatkowa stylizacja dla drugiego elementu .projects__img */
+	}
+	&__item:nth-child(9) .projects__img {
+		background-image: url("/dist/img/forest.png");
+
+		/* Dodatkowa stylizacja dla drugiego elementu .projects__img */
+	}
+	&__item:nth-child(10) .projects__img {
+		background-image: url("/dist/img/quotes.png");
+
+		/* Dodatkowa stylizacja dla drugiego elementu .projects__img */
+	}
+	&__item:nth-child(11) .projects__img {
+		background-image: url("/dist/img/loremtransport.png");
+
+		/* Dodatkowa stylizacja dla drugiego elementu .projects__img */
+	}
+	&__item:nth-child(12) .projects__img {
+		background-image: url("/dist/img/portfolio.png");
+		// border: 3px solid $pure-white;
+
+		/* Dodatkowa stylizacja dla drugiego elementu .projects__img */
+	}
+	&__item:nth-child(13) .projects__img {
+		background-image: url("/dist/img/cs.png");
+
+		/* Dodatkowa stylizacja dla drugiego elementu .projects__img */
+	}
+	&__item:nth-child(14) .projects__img {
+		background-image: url("/dist/img/cs.png");
+
+		/* Dodatkowa stylizacja dla drugiego elementu .projects__img */
+	}
+	&__item:nth-child(15) .projects__img {
+		background-image: url("/dist/img/cs.png");
+
+		/* Dodatkowa stylizacja dla drugiego elementu .projects__img */
+	}
 	// &__img:nth-of-type(2) {
 	// 	background-image: url("/dist/img/fightgame.png");
 	// }
@@ -124,7 +165,7 @@
 		padding: 0.5em;
 		font-weight: 200;
 		font-size: 1.8rem;
-		text-align: justify;
+		text-align: center;
 		color: $cosmos;
 	}
 	&__links {
