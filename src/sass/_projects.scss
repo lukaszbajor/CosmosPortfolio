@@ -165,9 +165,13 @@
 		padding: 0.5em;
 		font-weight: 200;
 		font-size: 1.8rem;
-		text-align: center;
+		text-align: left;
 		color: $cosmos;
+		&--middle {
+			text-align: center;
+		}
 	}
+
 	&__links {
 		width: 100%;
 		display: flex;
