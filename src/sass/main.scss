@@ -30,3 +30,23 @@ body {
 section {
 	scroll-margin-top: 50px;
 }
+
+.notfound {
+	min-height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	h1 {
+		font-size: 4rem;
+	}
+
+	h2 {
+		color: #221d41;
+	}
+	a {
+		text-decoration: none;
+		color: #221d41;
+	}
+}
