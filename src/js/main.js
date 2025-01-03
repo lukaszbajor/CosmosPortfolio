@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		star.className = "";
 		setTimeout(function () {
 			star.className = "header__star";
-			// startShootingStarAnimation(star); // Dodaj to, aby natychmiast uruchomić nową animację
 		}, 0);
 	};
 
@@ -44,10 +43,3 @@ links.forEach((link) => {
 
 burger.addEventListener("click", handleBurger);
 window.addEventListener("scroll", changeBackgroundColor);
-
-// links.forEach((item) => {
-// 	item.addEventListener("click", () => {
-// 		burger.classList.remove("active");
-// 		menu.classList.remove("show-menu");
-// 	});
-// });
