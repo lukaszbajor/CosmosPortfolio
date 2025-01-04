@@ -33,6 +33,8 @@
 		border-radius: 8px;
 		border: 2px solid $cosmos;
 		color: $cosmos;
+		font-family: "Roboto", sans-serif;
+		font-size: 1.6rem;
 	}
 	textarea {
 		min-height: 300px;
@@ -78,6 +80,8 @@
 		color: $pure-white;
 		letter-spacing: 2px;
 		outline: none;
+		font-family: "Roboto", sans-serif;
+		font-size: 1.6rem;
 	}
 	&__items {
 		margin-top: 2em;
