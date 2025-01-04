@@ -27,6 +27,7 @@
 		"sass": "^1.49.7"
 	},
 	"dependencies": {
+		"@emailjs/browser": "^4.4.1",
 		"particles.js": "^2.0.0"
 	}
 }

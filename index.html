@@ -14,6 +14,10 @@
 		/>
 		<link rel="stylesheet" href="./chatbot/main.css" />
 		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+		></script>
+		<script
 			src="https://kit.fontawesome.com/9bf94860b7.js"
 			crossorigin="anonymous"
 		></script>
@@ -701,17 +705,34 @@
 			<section class="contact" id="contact">
 				<h2 class="contact__title">Kontakt</h2>
 				<div class="contact__box">
-					<form action="" class="contact__form">
+					<form id="contactForm" class="contact__form">
 						<div class="contact__itemBox">
-							<input type="text" id="name" required placeholder=" " />
+							<input
+								type="text"
+								id="name"
+								name="name"
+								required
+								placeholder=" "
+							/>
 							<label for="name">Imię</label>
 						</div>
 						<div class="contact__itemBox">
-							<input type="email" id="email" required placeholder=" " />
+							<input
+								type="email"
+								id="email"
+								name="user_email"
+								required
+								placeholder=" "
+							/>
 							<label for="email">E-mail</label>
 						</div>
 						<div class="contact__itemBox">
-							<textarea type="text" id="text" required></textarea>
+							<textarea
+								type="text"
+								id="message"
+								name="message"
+								required
+							></textarea>
 							<label for="text">Wiadomość</label>
 						</div>
 
@@ -765,6 +786,7 @@
 		</footer>
 
 		<script src="./dist/js/main.min.js"></script>
+		<script src="./dist/js/emailjs.min.js"></script>
 		<script src="./dist/js/particles.min.js"></script>
 		<script src="./dist/js/loadParticles.min.js"></script>
 	</body>
