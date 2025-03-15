@@ -87,7 +87,7 @@
 		/* Dodatkowa stylizacja dla drugiego elementu .projects__img */
 	}
 	&__item:nth-child(10) .projects__img {
-		background-image: url("../img/quotes.png");
+		background-image: url("../img/auril.png");
 
 		/* Dodatkowa stylizacja dla drugiego elementu .projects__img */
 	}
@@ -113,6 +113,21 @@
 		/* Dodatkowa stylizacja dla drugiego elementu .projects__img */
 	}
 	&__item:nth-child(15) .projects__img {
+		background-image: url("../img/shop.png");
+
+		/* Dodatkowa stylizacja dla drugiego elementu .projects__img */
+	}
+	&__item:nth-child(16) .projects__img {
+		background-image: url("../img/cs.png");
+
+		/* Dodatkowa stylizacja dla drugiego elementu .projects__img */
+	}
+	&__item:nth-child(17) .projects__img {
+		background-image: url("../img/cs.png");
+
+		/* Dodatkowa stylizacja dla drugiego elementu .projects__img */
+	}
+	&__item:nth-child(18) .projects__img {
 		background-image: url("../img/cs.png");
 
 		/* Dodatkowa stylizacja dla drugiego elementu .projects__img */
@@ -167,9 +182,30 @@
 		font-size: 1.8rem;
 		text-align: left;
 		color: $cosmos;
+		opacity: 1;
+		transition: opacity 0.3s ease, max-height 0.5s ease-out;
+
 		&--middle {
 			text-align: center;
 		}
+		&--hidden {
+			opacity: 0;
+			max-height: 0;
+			overflow: hidden;
+			transition: opacity 0.3s ease, max-height 0.5s ease-out;
+		}
+
+		&--more {
+			opacity: 1;
+			max-height: 800px;
+		}
+	}
+	&__btnMore {
+		background: none;
+		border: none;
+		text-decoration: underline;
+		font-size: 1.6rem;
+		color: $cosmos;
 	}
 
 	&__links {
@@ -230,6 +266,9 @@
 		}
 		&__link:hover {
 			background-color: $opacity-cosmos-hover;
+		}
+		&__btnMore {
+			cursor: pointer;
 		}
 	}
 }
